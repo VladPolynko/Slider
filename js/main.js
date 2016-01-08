@@ -31,13 +31,13 @@ jQuery(function ($) {
 
     function append_img() {
         $("#loadZone").html('');
-        var m = 0;                                                         //crutch
+        var m = 0;
         for (var i = 0; i < list_array.length; i++) {
             if (list_array[i]['view'] === true) {
-                ++m;                                                        //crutch
+                ++m;
                 $("#loadZone").append("<div id=" + i + " class=item></div>");
                 if (m == 1) {
-                    $("#" + i).addClass('active');                          //crutch
+                    $("#" + i).addClass('active');
                 }
                 $("#" + i)
                     .append("<img src=" + list_array[i]['url'] + " alt=" + list_array[i]['alt'] + ">");
