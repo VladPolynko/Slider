@@ -18,19 +18,20 @@
 </head>
 <body>
 <!--                                        start-->
-<div id="S-main" class="main">
+<div class="main">
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
-        <h3>НАВ</h3>
+        <h3>Фильтер</h3>
         <ul id="load_list"></ul>
-        <div><button id="refresh">refresh</button></div>
+        <div>
+          <button id="refresh">refresh</button>
+        </div>
       </div>
       <div class="col-lg-8">
         <div class="row">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <div id="loadZone" class="carousel-inner" role="listbox">
-            </div>
+            <div id="loadZone" class="carousel-inner" role="listbox"></div>
             <!-- Left and right controls -->
             <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -43,22 +44,14 @@
           </div>
         </div>
       </div>
-
-      <div id="load_img" class="S-display-none">
-        <div id="S-img-1" class="S-img"><a href="#"><img src="style/img/1.jpg" alt="0"></a></div>
-        <div id="S-img-2" class="S-img"><a href="#"><img src="style/img/2.jpg" alt="1"></a></div>
-        <div id="S-img-3" class="S-img"><a href="#"><img src="style/img/3.jpg" alt="2"></a></div>
-      </div>
     </div>
-
   </div>
-</div>
-  <!--                                        end-->
+  <!--                                        include-->
   <script src="js/lib/jquery.js"></script>
 
   <script src="js/lib/bootstrap.js"></script>
 
   <script src="js/main.js"></script>
-
+</div>
 </body>
 </html>

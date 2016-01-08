@@ -4,43 +4,13 @@ body {
     font-size: 1em;
 }
 
-
-
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     width: 70%;
     margin: auto;
 }
 
-/*-------------plugin*/
-.relative{
-    position: relative;
-}
-
-.main .container{
-    /*width: 500px;*/
-    height: 30%;
-}
-
-.S-display-none{
-    display: none;
-}
-.S-height{
-    position: relative;
-    padding-top: 40%;
-    height: 100%;
-    cursor: pointer;
-}
-
-.load_zone{
-    position: relative;
-    overflow: hidden;
-    padding: 32px;
-}
-
-.S-img a img{
-    width: 100%;
-}
 
 
-/*----//////----plugin*/
+
+
