@@ -1,0 +1,66 @@
+[
+  {
+    "title": "lorem0",
+    "view": false,
+    "text": "Lorem ipsum dolor0",
+    "alt": "firs_img",
+    "index": "0",
+    "url": "style/img/1.jpg"
+  },
+  {
+    "title": "lorem1",
+    "view": true,
+    "text": "Lorem ipsum dolor1",
+    "alt": "firs_img",
+    "index": "1",
+    "url": "style/img/2.jpg"
+  },
+  {
+    "title": "lorem2",
+    "view": true,
+    "text": "Lorem ipsum dolor2",
+    "alt": "firs_img",
+    "index": "2",
+    "url": "style/img/3.jpg"
+  },
+  {
+    "title": "lorem3",
+    "view": true,
+    "text": "Lorem ipsum dolor3",
+    "alt": "firs_img",
+    "index": "3",
+    "url": "style/img/1.jpg"
+  },
+  {
+    "title": "lorem4",
+    "view": true,
+    "text": "Lorem ipsum dolor4",
+    "alt": "firs_img",
+    "index": "4",
+    "url": "style/img/2.jpg"
+  },
+  {
+    "title": "lorem5",
+    "view": true,
+    "text": "Lorem ipsum dolor5",
+    "alt": "firs_img",
+    "index": "5",
+    "url": "style/img/3.jpg"
+  },
+  {
+    "title": "lorem6",
+    "view": true,
+    "text": "Lorem ipsum dolor6",
+    "alt": "firs_img",
+    "index": "6",
+    "url": "style/img/1.jpg"
+  },
+  {
+    "title": "lorem7",
+    "view": true,
+    "text": "Lorem ipsum dolor7",
+    "alt": "firs_img",
+    "index": "7",
+    "url": "style/img/2.jpg"
+  }
+]

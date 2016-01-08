@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Bootstrap</title>
+  <!-- Bootstrap -->
+  <link href="style/lib/bootstrap.css" rel="stylesheet">
+  <link href="style/style.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+
+  <![endif]-->
+</head>
+<body>
+<!--                                        start-->
+<div id="S-main" class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <h3>НАВ</h3>
+        <ul id="load_list"></ul>
+        <div><button id="refresh">refresh</button></div>
+      </div>
+      <div class="col-lg-8">
+        <div class="row">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div id="loadZone" class="carousel-inner" role="listbox">
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="load_img" class="S-display-none">
+        <div id="S-img-1" class="S-img"><a href="#"><img src="style/img/1.jpg" alt="0"></a></div>
+        <div id="S-img-2" class="S-img"><a href="#"><img src="style/img/2.jpg" alt="1"></a></div>
+        <div id="S-img-3" class="S-img"><a href="#"><img src="style/img/3.jpg" alt="2"></a></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  <!--                                        end-->
+  <script src="js/lib/jquery.js"></script>
+
+  <script src="js/lib/bootstrap.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
