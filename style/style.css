@@ -2,9 +2,16 @@ html,
 body {
     height: 100%;
     font-size: 1em;
+    background: url("img/bg_img.jpg");
+    font-family:Arial, sans-serif ;
 }
 
-
+hr {
+    border: none;
+    color: #337AB7;
+    background-color: #337AB7;
+    height: 2px;
+}
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -12,35 +19,24 @@ body {
     margin: auto;
 }
 
-/*-------------plugin*/
-.relative{
-    position: relative;
+.text_center {
+    text-align: center;
 }
 
-.main .container{
-    /*width: 500px;*/
-    height: 30%;
+.load_list {
+    padding: 20px 0;
 }
 
-.S-display-none{
-    display: none;
-}
-.S-height{
-    position: relative;
-    padding-top: 40%;
-    height: 100%;
-    cursor: pointer;
+.text_decoration {
+    list-style-type: none;
 }
 
-.load_zone{
-    position: relative;
-    overflow: hidden;
-    padding: 32px;
+.left_block {
+    background: white;
+
 }
 
-.S-img a img{
-    width: 100%;
+.button_refresh {
+    padding: 5px;
 }
 
-
-/*----//////----plugin*/

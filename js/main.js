@@ -12,7 +12,7 @@ jQuery(function ($) {
         $("#load_list").html('');
         for (var i = 0; i < list_array.length; i++) {
             $("#load_list")
-                .append("<li><input id='" + list_array[i]['title'] + "' type='checkbox' data-index='" + list_array[i]['index'] + "'>" + list_array[i]['text'] + "</li>");
+                .append("<li><input id='" + list_array[i]['title'] + "' type='checkbox' data-index='" + list_array[i]['index'] + "'> " + list_array[i]['text'] + "</li>");
             if (list_array[i]['view'] === true) {
                 $("#" + list_array[i]['title']).attr('checked', 'checked');
             }
@@ -22,13 +22,11 @@ jQuery(function ($) {
 
     $(document).on('click', '#load_list li input', function () {
         var index = $(this).attr('data-index');
-        console.log(list_array[index]['view']);
         if (list_array[index]['view'] === true) {
             list_array[index]['view'] = false;
         } else {
             list_array[index]['view'] = true;
         }
-        //include();
     });
 
     function append_img() {
