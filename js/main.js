@@ -1,6 +1,8 @@
 jQuery(function ($) {
     var list_array = [];
-
+    var elem;
+    var num = 0;
+    var id_elem = [];
     $(document).ready(function () {
         $.getJSON('include/base.json', function (data) {
             list_array = data;
@@ -27,27 +29,43 @@ jQuery(function ($) {
         } else {
             list_array[index]['view'] = true;
         }
+        append_img();
     });
+
 
     function append_img() {
         $("#loadZone").html('');
         var m = 0;
+        id_elem = [];
         for (var i = 0; i < list_array.length; i++) {
             if (list_array[i]['view'] === true) {
                 ++m;
-                $("#loadZone").append("<div id=" + i + " class=item></div>");
+                $("#loadZone").append("<div id=" + i + "id" + " class=item></div>");
                 if (m == 1) {
-                    $("#" + i).addClass('active');
                 }
-                $("#" + i)
-                    .append("<img src=" + list_array[i]['url'] + " alt=" + list_array[i]['alt'] + ">");
+                id_elem.push(i + 'id');
+                $("#" + i + 'id')
+                    .append("<img src=" + list_array[i]['url'] + " alt=" + list_array[i]['alt'] + " data-text='" + list_array[i]['text'] + "'>");
             }
         }
+        slider();
     }
 
-    $(document).on('click', '#refresh', function () {
-        append_img();
-    });
+    function slider() {
+        $("#loadText").html('');
+        elem = $('#' + id_elem[num]);
+        $('.active').removeClass('active');
+        $(elem).addClass('active');
+        ++num;
+
+        if (num >= id_elem.length) {
+            num = 0;
+        }
+
+        $("#loadText").append(elem.children().data('text'));
+    }
+
+    setInterval(slider, 1000);
 
 });
 

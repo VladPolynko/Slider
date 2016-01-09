@@ -2,7 +2,6 @@ html,
 body {
     height: 100%;
     font-size: 1em;
-    background: url("img/bg_img.jpg");
     font-family:Arial, sans-serif ;
 }
 
@@ -34,6 +33,12 @@ hr {
 .left_block {
     background: white;
 
+}
+.item{
+    display: none ;
+}
+.active{
+    display: block !important;
 }
 
 
